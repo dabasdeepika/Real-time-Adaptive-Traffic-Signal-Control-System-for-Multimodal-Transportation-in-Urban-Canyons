@@ -1,0 +1,2 @@
+# Real-time-Adaptive-Traffic-Signal-Control-System-for-Multimodal-Transportation-in-Urban-Canyons
+Design a system that dynamically adjusts traffic signals in densely populated urban areas to optimize flow. It integrates data from traffic sensors, public transit, pedestrians, cyclists, and weather conditions to reduce congestion, minimize travel times, and improve air quality by promoting smoother traffic and alternative transportation modes.

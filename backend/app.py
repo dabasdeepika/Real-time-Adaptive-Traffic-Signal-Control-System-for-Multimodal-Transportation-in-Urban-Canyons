@@ -2,7 +2,7 @@ from flask import Flask, jsonify, render_template, request
 from flask_cors import CORS
 from flask_socketio import SocketIO, emit
 import threading
-from routes.traffic_routes import traffic_bp
+from backend.routes.traffic_routes import traffic_bp
 from routes.ambulance_routes import ambulance_bp
 from utils.traffic_simulator import TrafficSimulator
 

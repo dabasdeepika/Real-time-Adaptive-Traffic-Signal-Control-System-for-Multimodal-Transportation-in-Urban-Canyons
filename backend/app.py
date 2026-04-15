@@ -32,4 +32,4 @@ if __name__ == '__main__':
     t = threading.Thread(target=simulator.run, daemon=True)
     t.start()
     print("TrafficIQ running → http://localhost:5000")
-    socketio.run(app, host='0.0.0.0', port=5000, debug=False)
+    socketio.run(app)

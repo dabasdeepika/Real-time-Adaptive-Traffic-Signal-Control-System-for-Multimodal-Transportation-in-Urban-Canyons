@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 from flask_socketio import SocketIO, emit
 import threading
@@ -16,9 +16,9 @@ app.register_blueprint(ambulance_bp, url_prefix='/api/ambulance')
 
 simulator = TrafficSimulator(socketio)
 
-@app.route('/')
+@app.route("/")
 def index():
-    return render_template('dashboard.html')
+    return "Backend is running"
 
 @socketio.on('connect')
 def on_connect():

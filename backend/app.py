@@ -4,7 +4,7 @@ from flask_socketio import SocketIO, emit
 import threading
 from backend.routes.traffic_routes import traffic_bp
 from backend.routes.ambulance_routes import ambulance_bp
-from utils.traffic_simulator import TrafficSimulator
+from backend.utils.traffic_simulator import TrafficSimulator
 
 app = Flask(__name__, template_folder='../frontend/templates')
 app.config['SECRET_KEY'] = 'trafficiq2024'

@@ -9,7 +9,7 @@ from utils.traffic_simulator import TrafficSimulator
 app = Flask(__name__, template_folder='../frontend/templates')
 app.config['SECRET_KEY'] = 'trafficiq2024'
 CORS(app)
-socketio = SocketIO(app, cors_allowed_origins="*"')
+socketio = SocketIO(app, cors_allowed_origins="*")
 
 app.register_blueprint(traffic_bp, url_prefix='/api/traffic')
 app.register_blueprint(ambulance_bp, url_prefix='/api/ambulance')
